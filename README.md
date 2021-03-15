@@ -9,7 +9,7 @@
 git clone https://github.com/Rajesh-Detroja/ChiTaH.git
 ```
 
-**Download Bowtie2 index of pan-reference database as follows:**
+**Download Bowtie2 index of pan-reference database and other reference files as follows:**
 
 ```bash
 wget 
@@ -22,6 +22,11 @@ wget
 ```
 
 ## Setting up config file
+
+Config files is provided in ChiTaH packaged names as `ChiTaH.txt`
+
+After downloading ChiTaH and it's index of pan-reference database and other reference files, please replace <FULL_PATH> with the complete path in your system.
+
 
 ## How to use ChiTaH for paired-end datasets
 
