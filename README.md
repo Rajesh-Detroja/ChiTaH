@@ -31,7 +31,7 @@ wget
 
 **[bedtools -v 2.26.0](https://github.com/arq5x/bedtools2/releases/tag/v2.26.0)**
 
-**[merge]()**
+**[merge](https://www.dropbox.com/s/2jyo4t3y8s1ftwf/merge.zip?dl=0)**
 
 <br></br>
 
