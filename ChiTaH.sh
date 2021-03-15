@@ -85,46 +85,6 @@ head -n 1 chimeras.tsv | awk '{$1=$1 "\t" "chimera_type" "\t" "gene1" "\t" "stra
 
 join $chimera_ANN <(sort -k1,1 chimeras.tsv) | awk -v OFS="\t" '$1=$1' | sort -k2,2 >> all_chimeras.tsv
 
-#grep -e "^chimera" -e "exon-exon" all_chimeras.tsv | awk 'NR == 1; NR > 1 {print $0 | "sort -k9nr"}' > exon_exon_chimeras.tsv
-
-## get junction and chimera sequences
-#cut -f7 all_chimeras.tsv | grep -v "^junction_id" | sed 's/:/\t/g' | sed 's/-/\t/g' | bedtools getfasta -fi $chimera_fa -bed - > all_chimeras_junctions.fa
-
-#cut -f7 all_chimeras.tsv | grep -v "^junction_id" | cut -d":" -f1 | while read id ; do samtools faidx $chimera_fa ${id} >> all_chimeras_sequence.fa ; done
-
-#samtools faidx all_chimeras_sequence.fa
-
-
-## Call consensus sequence
-#samtools mpileup -uf $chimera_fa *.chimera.sam.bam.sorted.bam | bcftools call -c | vcfutils.pl vcf2fq | seqtk seq -AQ64 > consensus_sequence.fa
-
-#samtools faidx consensus_sequence.fa
-
-#cut -f7 all_chimeras.tsv | grep -v "^junction_id" | sed 's/:/\t/g' | sed 's/-/\t/g' | bedtools getfasta -fi consensus_sequence.fa -bed - > all_chimeras_consensus_junction.fa
-
-#rm -rf consensus_sequence.fa all_chimeras_sequence.fa.fai
-
-
-## Predict ORF / Protein Sequence
-
-#chimera_out=exon_exon_chimeras_sequence.fa
-
-#date && time getorf -sequence $chimera_out -outseq ${chimera_out%???}".fnn" -minsize 75 -find 1
-
-#perl -pe '$. > 1 and /^>/ ? print "\n" : chomp' ${chimera_out%???}".fnn" > $chimera_out".1_line.fnn"
-
-#cut -f7 exon_exon_chimeras.txt | grep -v "^junction_id" | cut -d":" -f1 | while read id ; do sed -n -e '/^>'${id}'_/{$!N;p;}' -e h $chimera_out".1_line.fnn" > ${id}".fnn" ; done
-
-#cut -f7 exon_exon_chimeras.txt | grep -v "^junction_id" | cut -d":" -f1 | while read id ; do awk '/^>/ {printf("%s%s\t",(N>0?"\n":""),$0);N++;next;} {printf("%s",$0);} END {printf("\n");}' ${id}".fnn" | awk -F '\t' '{printf("%d\t%s\n",length($2),$0);}' | sort -k1,1nr | cut -f 2- | tr "\t" "\n" | head -n 2 > ${id}".1.fnn" ; done
-
-#cat *.1.fnn | sed '/^$/d' > exon_exon_chimeras_protein.fnn
-
-#cut -f7 exon_exon_chimeras.txt | grep -v "^junction_id" | cut -d":" -f1 | while read id ; do rm -rf ${id}".fnn" ; done
-
-#rm -rf *.1_line.fnn rm -rf *.1.fnn
-
-#Rscript /home/morgensternlab/detrojar/scripts/RPKM_TPM.R chimeras.txt
-
 rm -rf *.chimera.sam.bam.sorted.bam.bed *.chimera.sam.bam.sorted.bam.bed.coverage *.chimera.sam.bam.sorted.bam.bed.coverage.junction chimeras.tsv exon_exon_chimeras_sequence.fnn#
 
 echo "Done!"
