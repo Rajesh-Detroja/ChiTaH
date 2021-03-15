@@ -23,6 +23,16 @@ wget
 wget 
 ```
 
+**Following dependencies must be installed and setuped in your system profile**
+
+**[Bowtie2 -v 2.3.3.1](https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.3.1/)**
+
+**[sambamba -v 0.6.6](https://github.com/biod/sambamba/releases/tag/v0.6.6)**
+
+**[bedtools -v 2.26.0](https://github.com/arq5x/bedtools2/releases/tag/v2.26.0)**
+
+**[merge]()**
+
 <br></br>
 
 ## Setting up config file
