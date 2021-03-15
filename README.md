@@ -3,6 +3,13 @@
 
 ## Installations
 
+**Download ChiTaH by using following command or Download as ZIP**
+
+```bash
+git clone https://github.com/Rajesh-Detroja/ChiTaH.git
+```
+
+
 ## Setting up config file
 
 ## How to use ChiTaH for paired-end datasets
