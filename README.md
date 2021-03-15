@@ -3,7 +3,7 @@
 
 ## Installations
 
-### How to use ChiTaH for paired-end datasets
+## How to use ChiTaH for paired-end datasets
 
 **Example Fastq files:**
 
@@ -26,7 +26,7 @@ bash ChiTaH.sh -1 .R1.fastq.gz -2 .R2.fastq.gz -c config.txt
 That's it! This command will automatically run paired-end datasets of sample 1 and sample 2 and it will generated output matrix table in the file `all_chimeras.tsv`
 
 
-### How to use ChiTaH for single-end datasets
+## How to use ChiTaH for single-end datasets
 
 **Example Fastq files:**
 
