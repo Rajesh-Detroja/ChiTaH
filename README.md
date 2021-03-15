@@ -9,7 +9,13 @@
 git clone https://github.com/Rajesh-Detroja/ChiTaH.git
 ```
 
-**Download Bowtie2 index of pan-refernce database as follows:**
+**Download Bowtie2 index of pan-reference database as follows:**
+
+```bash
+wget 
+```
+
+**Download test datasets as follows:**
 
 ```bash
 wget 
