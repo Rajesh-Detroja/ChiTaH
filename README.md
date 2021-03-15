@@ -23,7 +23,7 @@ sample_2.R2.fastq.gz
 bash ChiTaH.sh -1 .R1.fastq.gz -2 .R2.fastq.gz -c config.txt
 ```
 
-That's it! This command will run automatically paired-end datasets of sample 1 and sample 2 and it will generated output matrix table.
+That's it! This command will automatically run paired-end datasets of sample 1 and sample 2 and it will generated output matrix table.
 
 
 ### How to use ChiTaH for single-end datasets
@@ -42,4 +42,4 @@ sample_2.fastq.gz
 bash ChiTaH.sh -1 .fastq.gz -c config.txt
 ```
 
-That's it! This command will run automatically single-end datasets of sample 1 and sample 2 and it will generate output matrix table.
+That's it! This command will automatically run single-end datasets of sample 1 and sample 2 and it will generate output matrix table.
