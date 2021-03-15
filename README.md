@@ -9,6 +9,11 @@
 git clone https://github.com/Rajesh-Detroja/ChiTaH.git
 ```
 
+**Download Bowtie2 index of pan-refernce database as follows:**
+
+```bash
+wget 
+```
 
 ## Setting up config file
 
