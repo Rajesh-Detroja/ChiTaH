@@ -13,9 +13,8 @@ git clone https://github.com/Rajesh-Detroja/ChiTaH.git
 
 **Download Bowtie2 index of pan-reference database and other reference files as follows:**
 
-```bash
-wget 
-```
+**[pan-reference](https://www.dropbox.com/s/0ut34s3tnoqxwcv/pan_reference.zip?dl=0)**
+
 
 **Download test datasets as follows:**
 
