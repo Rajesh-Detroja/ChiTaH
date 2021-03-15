@@ -3,10 +3,10 @@
 
 threads="25"
 
-bowtie2_index="/home/morgensternlab/detrojar/db/chimeras/index/human_chimeras.fa"
+bowtie2_index="<FULL_PATH>/human_chimeras.fa"
 
-chimera_bed="/home/morgensternlab/detrojar/db/chimeras/chimeras_43466.bed"
-chimera_ANN="/home/morgensternlab/detrojar/db/chimeras/chimeras_43466.ANN"
-chimera_fa="/home/morgensternlab/detrojar/db/chimeras/chimeras_43466.fa"
+chimera_bed="<FULL_PATH>/chimeras_43466.bed"
+chimera_ANN="<FULL_PATH>/chimeras_43466.ANN"
+chimera_fa="<FULL_PATH>/chimeras_43466.fa"
 
 depth="5"
