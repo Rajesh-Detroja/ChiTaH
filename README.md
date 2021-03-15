@@ -3,6 +3,8 @@
 
 ## Installations
 
+## Setting up config file
+
 ## How to use ChiTaH for paired-end datasets
 
 **Example Fastq files:**
