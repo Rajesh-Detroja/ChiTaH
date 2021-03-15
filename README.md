@@ -44,22 +44,22 @@ After downloading ChiTaH and it's index of pan-reference database and other refe
 
 ## How to use ChiTaH for paired-end datasets
 
-**Example Fastq files:**
+**Test Fastq files:**
 
 ```text
-sample_1.R1.fastq.gz
+hybrid_50.R1.fastq
 
-sample_1.R2.fastq.gz
+hybrid_50.R2.fastq
 
-sample_2.R1.fastq.gz
+hybrid_100.R1.fastq
 
-sample_2.R2.fastq.gz
+hybrid_100.R2.fastq
 ```
 
 **Run ChiTaH:**
 
 ```bash
-bash ChiTaH.sh -1 .R1.fastq.gz -2 .R2.fastq.gz -c config.txt
+bash ChiTaH.sh -1 .R1.fastq -2 .R2.fastq -c config.txt
 ```
 
 That's it! This command will automatically run paired-end datasets of sample 1 and sample 2 and it will generated output matrix table in the file `all_chimeras.tsv`
@@ -68,18 +68,18 @@ That's it! This command will automatically run paired-end datasets of sample 1 a
 
 ## How to use ChiTaH for single-end datasets
 
-**Example Fastq files:**
+**Test Fastq files:**
 
 ```text
-sample_1.fastq.gz
+hybrid_50.fastq
 
-sample_2.fastq.gz
+hybrid_100.fastq
 ```
 
 **Run ChiTaH:**
 
 ```bash
-bash ChiTaH.sh -1 .fastq.gz -c config.txt
+bash ChiTaH.sh -1 .fastq -c config.txt
 ```
 
 That's it! This command will automatically run single-end datasets of sample 1 and sample 2 and it will generate output matrix table in the file `all_chimeras.tsv`
