@@ -1,0 +1,12 @@
+## Chimera options
+## ---------------
+
+threads="25"
+
+bowtie2_index="/home/morgensternlab/detrojar/db/chimeras/index/human_chimeras.fa"
+
+chimera_bed="/home/morgensternlab/detrojar/db/chimeras/chimeras_43466.bed"
+chimera_ANN="/home/morgensternlab/detrojar/db/chimeras/chimeras_43466.ANN"
+chimera_fa="/home/morgensternlab/detrojar/db/chimeras/chimeras_43466.fa"
+
+depth="5"
