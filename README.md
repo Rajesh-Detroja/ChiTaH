@@ -18,9 +18,8 @@ git clone https://github.com/Rajesh-Detroja/ChiTaH.git
 
 **Download test datasets as follows:**
 
-```bash
-wget 
-```
+**[Test Datasets](https://www.dropbox.com/s/qddy9cexbmali7n/test_datesets.zip?dl=0)**
+
 
 **Following dependencies must be installed and setuped in your system profile**
 
