@@ -61,7 +61,7 @@ hybrid_100.R2.fastq
 bash ChiTaH.sh -1 .R1.fastq -2 .R2.fastq -c config.txt
 ```
 
-That's it! This command will automatically run paired-end datasets of sample 1 and sample 2 and it will generated output matrix table in the file `all_chimeras.tsv`
+That's it! This command will automatically run paired-end datasets of samples hybrid_50 and hybrid_100 and it will generated output matrix table in the file `all_chimeras.tsv`
 
 <br></br>
 
@@ -81,4 +81,4 @@ hybrid_100.fastq
 bash ChiTaH.sh -1 .fastq -c config.txt
 ```
 
-That's it! This command will automatically run single-end datasets of sample 1 and sample 2 and it will generate output matrix table in the file `all_chimeras.tsv`
+That's it! This command will automatically run single-end datasets of samples hybrid_50 and hybrid_100 and it will generate output matrix table in the file `all_chimeras.tsv`
