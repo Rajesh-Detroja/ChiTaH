@@ -13,23 +13,26 @@ git clone https://github.com/Rajesh-Detroja/ChiTaH.git
 
 **Download Bowtie2 index of pan-reference database and other reference files as follows:**
 
-**[pan-reference](https://www.dropbox.com/s/0ut34s3tnoqxwcv/pan_reference.zip?dl=0)**
+[pan-reference](https://www.dropbox.com/s/0ut34s3tnoqxwcv/pan_reference.zip?dl=0)
 
 
 **Download test datasets as follows:**
 
-**[Test Datasets](https://www.dropbox.com/s/qddy9cexbmali7n/test_datesets.zip?dl=0)**
+[Test Datasets](https://www.dropbox.com/s/qddy9cexbmali7n/test_datesets.zip?dl=0)
 
 
 **Following dependencies must be installed and setuped in your system profile**
 
-**[Bowtie2 -v 2.3.3.1](https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.3.1/)**
+[Bowtie2 -v 2.3.3.1](https://sourceforge.net/projects/bowtie-bio/files/bowtie2/2.3.3.1/)
 
-**[sambamba -v 0.6.6](https://github.com/biod/sambamba/releases/tag/v0.6.6)**
+[samclip](https://github.com/tseemann/samclip)
 
-**[bedtools -v 2.26.0](https://github.com/arq5x/bedtools2/releases/tag/v2.26.0)**
+[sambamba -v 0.6.6](https://github.com/biod/sambamba/releases/tag/v0.6.6)
 
-**[merge](https://www.dropbox.com/s/2jyo4t3y8s1ftwf/merge.zip?dl=0)**
+[bedtools -v 2.26.0](https://github.com/arq5x/bedtools2/releases/tag/v2.26.0)
+
+[merge](https://www.dropbox.com/s/2jyo4t3y8s1ftwf/merge.zip?dl=0)
+
 
 <br></br>
 
