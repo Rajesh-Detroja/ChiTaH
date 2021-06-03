@@ -33,7 +33,7 @@ then
 	then
 		for ((i=0;i<${#R1[@]};i++)); do
 			sample=${R1[i]%$suffix}
-			(bowtie2 --local -p $threads -x $X -1 ${R1[i]} -2 ${R2[i]} | grep -v -e "chr" -e "HLA" -e "ENST" > $sample.chimera.sam)2>$sample.chimera.log
+			(bowtie2 --local -p $threads -x $X -1 ${R1[i]} -2 ${R2[i]} | samclip --ref $X | grep -v -e "chr" -e "HLA" -e "ENST" > $sample.chimera.sam)2>$sample.chimera.log
 		done
 	else
 		echo "Issue!"
@@ -47,7 +47,7 @@ else
 	then
 		for ((i=0;i<${#R1[@]};i++)); do
 			sample=${R1[i]%$suffix}
-			(bowtie2 --local -p $threads -x $X -U ${R1[i]} | grep -v -e "chr" -e "HLA" -e "ENST" > $sample.chimera.sam)2>$sample.chimera.log
+			(bowtie2 --local -p $threads -x $X -U ${R1[i]} | samclip --ref $X | grep -v -e "chr" -e "HLA" -e "ENST" > $sample.chimera.sam)2>$sample.chimera.log
 		done
 	else
 		echo "Issue!"
