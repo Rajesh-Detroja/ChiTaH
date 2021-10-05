@@ -1,7 +1,7 @@
 # ChiTaH
 ### ChiTaH: A fast and accurate tool for identifying known human chimeric sequences from high-throughput sequencing data
 
-Fusion genes or chimeras typically comprise sequences from two different genes. The chimeric RNAs of such joined sequences often serve as cancer drivers. Identifying such driver fusions in a given cancer or complex disease is important for diagnosis and treatment. The advent of next-generation sequencing technologies, such as DNA–Seq or RNA–Seq, together with the development of suitable computational tools, has made the global identifi-cation of chimeras in tumors possible. However, the testing of over 20 computational methods showed these to be limited in terms of chimera prediction sensitivity, specificity, and accurate quantification of junction reads. These shortcomings motivated us to develop the first "reference-based" approach termed ChiTaH (Chimeric Transcripts from High–throughput sequencing data). ChiTaH uses 43,466 non–redundant known human chimeras as a reference database to map sequencing reads and to accurately identify chimeric reads. We benchmarked ChiTaH and four other methods to identify human chimeras, leveraging both simulated and real sequencing datasets. ChiTaH was found to be the most accurate and fastest method for identifying known human chimeras from simulated and sequencing datasets. Moreover, especially ChiTaH uncovered heterogeneity of the BCR-ABL1 chimera in both bulk and single-cells of the K-562 cell line, which was confirmed experimentally.
+Fusion genes or chimeras typically comprise sequences from two different genes. The chimeric RNAs of such joined sequences often serve as cancer drivers. Identifying such driver fusions in a given cancer or complex disease is important for diagnosis and treatment. The advent of next-generation sequencing technologies, such as DNA–Seq or RNA–Seq, together with the development of suitable computational tools, has made the global identification of chimeras in tumors possible. However, the testing of over 20 computational methods showed these to be limited in terms of chimera prediction sensitivity, specificity, and accurate quantification of junction reads. These shortcomings motivated us to develop the first "reference-based" approach termed ChiTaH (Chimeric Transcripts from High–throughput sequencing data). ChiTaH uses 43,466 non–redundant known human chimeras as a reference database to map sequencing reads and to accurately identify chimeric reads. We benchmarked ChiTaH and four other methods to identify human chimeras, leveraging both simulated and real sequencing datasets. ChiTaH was found to be the most accurate and fastest method for identifying known human chimeras from simulated and sequencing datasets. Moreover, especially ChiTaH uncovered heterogeneity of the BCR-ABL1 chimera in both bulk and single-cells of the K-562 cell line, which was confirmed experimentally.
 
 <br></br>
 
@@ -53,6 +53,8 @@ After downloading ChiTaH and it's index of human-chimera-reference database and 
 **chimera_ANN:** Set a FULL PATH to the ANNOTATION file of chimeras (**i.e.** chimeras_43466.ANN)
 
 **chimera_fa:** Set a FULL PATH to the FASTA file of the chimeras (**i.e.** chimeras_43466.fa)
+
+**depth:** Set a total number of reads to count at unique junctions of chimeras (**Default:** 5)
 
 
 <br></br>
